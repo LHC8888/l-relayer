@@ -1,0 +1,71 @@
+Arguments: 
+  /Users/lhc/.nvm/versions/node/v14.15.1/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/sbin:/Users/lhc/.nvm/versions/node/v14.15.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/opt/nvm/nvm.sh:/Users/lhc/Desktop/learning/learning_flutter/flutter/bin:/Users/lhc/Desktop/learning/learning_flutter/flutter/bin/cache/dart-sdk/bin:/Users/lhc/Desktop/learning/learning_flutter/flutter/.pub-cache/bin:/usr/local/opt/nvm/nvm.sh:/Users/lhc/Desktop/learning/learning_flutter/flutter/bin:/Users/lhc/Desktop/learning/learning_flutter/flutter/bin/cache/dart-sdk/bin:/Users/lhc/Desktop/learning/learning_flutter/flutter/.pub-cache/bin:/usr/local/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: read ETIMEDOUT
+      at TLSWrap.onStreamRead (internal/stream_base_commons.js:209:20)
+
+npm manifest: 
+  {
+    "name": "l-relayer",
+  	"displayName": "l-relayer",
+  	"description": "a dev relayer",
+  	"version": "0.0.1",
+  	"engines": {
+  		"vscode": "^1.68.0"
+  	},
+  	"categories": [
+  		"Other"
+  	],
+  	"activationEvents": [
+          "onCommand:l-relayer.helloWorld"
+  	],
+  	"main": "./out/extension.js",
+  	"contributes": {
+  		"commands": [
+  			{
+  				"command": "l-relayer.helloWorld",
+  				"title": "Hello World"
+  			}
+  		]
+  	},
+  	"scripts": {
+  		"vscode:prepublish": "yarn run compile",
+  		"compile": "tsc -p ./",
+  		"watch": "tsc -watch -p ./",
+  		"pretest": "yarn run compile && yarn run lint",
+  		"lint": "eslint src --ext ts",
+  		"test": "node ./out/test/runTest.js"
+  	},
+  	"devDependencies": {
+  		"@types/vscode": "^1.68.0",
+  		"@types/glob": "^7.2.0",
+  		"@types/mocha": "^9.1.1",
+  		"@types/node": "16.x",
+  		"@typescript-eslint/eslint-plugin": "^5.27.0",
+  		"@typescript-eslint/parser": "^5.27.0",
+  		"eslint": "^8.16.0",
+  		"glob": "^8.0.3",
+  		"mocha": "^10.0.0",
+  		"typescript": "^4.7.2",
+  		"@vscode/test-electron": "^2.1.3"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
